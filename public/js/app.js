@@ -9,7 +9,7 @@ console.log("Client side javascript is loaded");
     const location=search.value
     document.querySelector('#result').textContent="Loading..."
     document.querySelector('#error').textContent=""
-    fetch('http://localhost:3000/weather?location='+location).then((response)=>{
+    fetch('/weather?location='+location).then((response)=>{
       response.json().then((data)=>{
         if(data.error){
           document.querySelector('#error').textContent="Error: "+data.error;
