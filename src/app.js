@@ -40,7 +40,7 @@ app.get('/about',(req,res)=>{
   res.render('about',{
     title:'About Me',
     name:'Debjit',
-    aboutText:'I am a software engineer'
+    aboutText:'This app uses mapbox and weatherstack to compute the output values.'
   })
 })
 app.get('/weather',(req,res)=>{
